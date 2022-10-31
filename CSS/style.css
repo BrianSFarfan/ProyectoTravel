@@ -1,0 +1,37 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    margin-top: -5px;
+}
+
+.logo img {
+    width: 80px;
+    height: 63px;
+}
+
+
+/*FOOTER*/
+
+.ftcontainer {
+    margin-top: 20px;
+    row-gap: 2rem;
+    max-width: 968px;
+    margin: 0 1.5rem;
+}
+
+.red {
+    display: grid;
+}
+
+.footer {
+    position: relative;
+    botom: 0;
+}
