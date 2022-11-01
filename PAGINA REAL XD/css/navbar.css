@@ -1,0 +1,159 @@
+nav {
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    z-index: 10;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: table;
+}
+
+nav ul li {
+    line-height: 80px;
+    display: inline-block;
+    position: relative;
+    padding: 15px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-decoration-color: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 20px 20px;
+}
+
+nav ul li a:after {
+    align-content: center;
+    margin-top: -20px;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: rgb(255, 255, 255);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+nav ul li a:hover {
+    color: rgb(226, 226, 226);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.checkbtn #spn1,
+#spn2,
+#spn3 {
+    display: flex;
+    content: '';
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+    height: 3px;
+    transition: all 400ms ease;
+    position: relative;
+}
+
+#spn2 {
+    margin-top: 8px;
+}
+
+#spn3 {
+    margin-top: 8px
+}
+
+#check {
+    display: none;
+}
+
+.sombraA {
+    box-shadow: 0px 0px 30px rgba(42, 43, 43, 0.644)
+}
+
+
+/*LOGO*/
+
+.imgLogo {
+    width: 150px;
+}
+
+
+/*FIN DE LOGO*/
+
+@media (max-width: 1078px) {
+    .checkbtn {
+        position: fixed;
+        display: block;
+        z-index: 10;
+        left: 50%;
+        top: 0;
+        margin-left: -15px;
+    }
+    .inicioNav {
+        margin-top: 100px;
+    }
+    nav ul {
+        opacity: 0;
+        position: fixed;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(-0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+        top: -100%;
+        text-align: center;
+        transition: 1s;
+        z-index: 5;
+        margin: 0px;
+    }
+    nav ul li {
+        display: block;
+        line-height: 50px;
+    }
+    a:hover,
+    a.active {
+        background: rbga(0, 0, 0, 0);
+        color: #ffffff;
+    }
+    #check:checked~ul {
+        opacity: 100%;
+        top: 0;
+    }
+    #check:checked~.checkbtn #spn1 {
+        transform: rotate(140deg);
+        top: 10px;
+    }
+    #check:checked~.checkbtn #spn2 {
+        opacity: 0;
+    }
+    #check:checked~.checkbtn #spn3 {
+        transform: rotate(-140deg);
+        top: -11px;
+    }
+    nav ul li a:after {
+        margin-top: 0;
+        position: relative;
+    }
+}
