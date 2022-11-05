@@ -115,6 +115,17 @@ body::-webkit-scrollbar-thumb {
 
 .redondo {
     border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+.iconos {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
 }
 
 
@@ -127,7 +138,7 @@ body::-webkit-scrollbar-thumb {
     background-size: cover;
     background-position: center;
     color: white;
-    clip-path: polygon(0 100%, 100% 99%, 100% 0, 55% 0, 50% 10%, 45% 0, 0 0);
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 55% 0, 50% 10%, 45% 0, 0 0);
 }
 
 hr {
@@ -144,6 +155,10 @@ hr {
 
 
 /*Footer*/
+
+.navlinkFooter p a {
+    text-decoration: none;
+}
 
 .grid-container>* {
     grid-template-areas: "grid1" "grid2" "grid4" "grid3";
