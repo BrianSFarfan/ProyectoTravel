@@ -137,7 +137,7 @@ nav ul li a:hover {
         display: block;
         z-index: 10;
         left: 50%;
-        top: 0;
+        top: 60px;
         margin-left: -15px;
     }
     .inicioNav {

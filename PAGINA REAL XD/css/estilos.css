@@ -18,15 +18,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50px;
 }
 
-.footerF {
-    color: #fff;
-    height: 400px;
-    background-attachment: fixed;
-    background-image: linear-gradient(0deg, rgba(8, 8, 90, 0.842), rgba(10, 10, 88, 0.986)), url('../img/aeroWall.jpeg');
-    background-size: cover;
-    background-position: center;
-}
-
 .banner-image1 {
     background-attachment: fixed;
     background-image: linear-gradient(0deg, rgba(0, 0, 255, 0.507) 5%, rgba(95, 95, 95, 0.418), rgba(23, 23, 24, 0.986)), url('../img/aeroWall.jpeg');
@@ -122,8 +113,37 @@ body::-webkit-scrollbar-thumb {
     width: 200px;
 }
 
+.redondo {
+    border-radius: 50px;
+}
 
-/*GRID CONTAINER FILAS Y COLUMNAS*/
+
+/*FOOTER*/
+
+.footerF {
+    margin-top: 20px;
+    background-attachment: fixed;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 5%, rgba(27, 27, 27, 0.8), rgba(15, 15, 15, 0.596)), url('../img/aeroWall.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    clip-path: polygon(0 100%, 100% 99%, 100% 0, 55% 0, 50% 10%, 45% 0, 0 0);
+}
+
+hr {
+    border-top: 4px solid #0f0692;
+    opacity: 1;
+    height: 10px;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+/*Footer*/
 
 .grid-container>* {
     grid-template-areas: "grid1" "grid2" "grid4" "grid3";
@@ -201,11 +221,6 @@ body::-webkit-scrollbar-thumb {
 .subTextInicio {
     font-size: 1.5rem;
     color: white;
-}
-
-.footerB {
-    margin: auto auto;
-    margin-top: 10px;
 }
 
 .redes a {
