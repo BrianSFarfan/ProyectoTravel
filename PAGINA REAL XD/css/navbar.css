@@ -1,12 +1,39 @@
 nav {
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     height: 80px;
-    width: 100%;
+    right: 0;
     position: absolute;
     display: flex;
     overflow: hidden;
     z-index: 10;
+}
+
+.redesSociales {
+    align-items: center;
+    justify-content: left;
+    z-index: 11;
+    position: absolute;
+    display: flex;
+    height: 80px;
+    margin-top: -2px;
+    margin-left: 10px;
+}
+
+.redesSociales a {
+    width: 30px;
+    margin: 0px 15px;
+    color: #fff;
+    transition: 0.5s;
+    opacity: 0.4;
+}
+
+.redesSociales a:hover {
+    width: 30px;
+    margin: 0px 15px;
+    color: #fff;
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 nav ul {
@@ -29,10 +56,11 @@ nav ul li a {
     text-decoration-color: none;
     letter-spacing: 0.15em;
     display: inline-block;
-    padding: 20px 20px;
+    padding: 20px 15px;
 }
 
 nav ul li a:after {
+    position: relative;
     align-content: center;
     margin-top: -20px;
     background: none repeat scroll 0 0 transparent;
@@ -40,7 +68,7 @@ nav ul li a:after {
     content: "";
     display: block;
     height: 2px;
-    left: 50%;
+    left: 100%;
     background: rgb(255, 255, 255);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
@@ -153,6 +181,7 @@ nav ul li a:hover {
         top: -11px;
     }
     nav ul li a:after {
+        left: 50%;
         margin-top: 0;
         position: relative;
     }
