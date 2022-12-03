@@ -11,7 +11,7 @@ nav {
 
 .redesSociales {
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     z-index: 11;
     position: absolute;
     display: flex;
@@ -132,7 +132,7 @@ nav ul li a:hover {
 
 /*FIN DE LOGO*/
 
-@media (max-width: 1078px) {
+@media (max-width: 850px) {
     .checkbtn {
         position: fixed;
         display: block;
@@ -185,5 +185,13 @@ nav ul li a:hover {
         left: 50%;
         margin-top: 0;
         position: relative;
+    }
+    .redesSociales {
+        align-items: center;
+        justify-content: center;
+        z-index: 11;
+        position: absolute;
+        display: flex;
+        height: 80px;
     }
 }

@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 38, 255, 0.466);
+    background-color: #0f0692;
     border-radius: 50px;
 }
 
@@ -38,10 +38,6 @@ body::-webkit-scrollbar-thumb {
 
 .borde {
     border-radius: 50px;
-}
-
-.cardMuseo {
-    width: 350px;
 }
 
 .CardTexto p {
@@ -113,11 +109,16 @@ body::-webkit-scrollbar-thumb {
     width: 200px;
 }
 
-.redondo {
+
+/*BOTONES DE FOOTER*/
+
+.redondoBotones {
     border-radius: 50px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: 0;
+    border: none;
+    transition: 0.5s;
 }
 
 .iconos {
@@ -125,7 +126,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: 10px;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
@@ -139,6 +140,11 @@ body::-webkit-scrollbar-thumb {
     background-position: center;
     color: white;
     clip-path: polygon(0 100%, 100% 100%, 100% 0, 55% 0, 50% 10%, 45% 0, 0 0);
+    border: inset 5px;
+    border-color: rgba(255, 208, 0);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
 }
 
 hr {
@@ -156,8 +162,17 @@ hr {
 
 /*Footer*/
 
+.navlinkFooter p {
+    margin-bottom: 7px;
+}
+
 .navlinkFooter p a {
+    color: white;
     text-decoration: none;
+}
+
+.navlinkFooter p a :hover {
+    color: red;
 }
 
 .grid-container>* {
@@ -187,30 +202,15 @@ hr {
     .CardInicio {
         display: grid;
     }
-    .cardMuseo {
-        width: 280px;
-    }
     .CardTexto h5 {
         margin-top: 20%;
-    }
-    .cardVisita {
-        width: 250px;
     }
     .ventanas {
         display: grid;
     }
 }
 
-@media (max-width: 991px) {
-    .cardMuseo {
-        margin-top: 15px;
-        width: 280px;
-    }
-    .cardVisita {
-        margin-top: 15px;
-        width: 250px;
-    }
-}
+@media (max-width: 991px) {}
 
 .titulos {
     font-family: serif;
@@ -230,7 +230,7 @@ hr {
 }
 
 .LogoInicio {
-    width: 800px;
+    width: 80%;
 }
 
 .subTextInicio {
@@ -256,27 +256,12 @@ hr {
     color: rgb(136, 136, 136);
 }
 
-@media (max-width: 440px) {
-    .titulos {
-        font-size: 40px;
-    }
-    .cuadroText p {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 330px) {
-    .titulos {
-        font-size: 30px;
-    }
-}
-
 @media (max-width: 1059px) {
     .TextInicio {
         font-size: 4rem;
     }
     .LogoInicio {
-        width: 300px;
+        width: 90%;
     }
     .subTextInicio {
         font-size: 1.3rem;
@@ -299,5 +284,36 @@ hr {
     }
     .redes div {
         margin: auto auto;
+    }
+    .hrFooter {
+        margin: auto;
+        width: 160px;
+        margin-bottom: 20px;
+    }
+    .footerF {
+        border: inset 7px;
+        border-color: rgba(255, 208, 0);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 55% 0, 50% 5%, 45% 0, 0 0);
+    }
+}
+
+@media (max-width: 440px) {
+    .titulos {
+        font-size: 40px;
+    }
+    .cuadroText p {
+        font-size: 20px;
+    }
+    .footerF {
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 60% 0, 50% 4%, 40% 0, 0 0);
+    }
+}
+
+@media (max-width: 330px) {
+    .titulos {
+        font-size: 30px;
     }
 }
