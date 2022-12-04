@@ -137,7 +137,7 @@ nav ul li a:hover {
         position: fixed;
         display: block;
         z-index: 10;
-        background-color: rgb(0 0 0 / 50%);
+        background-color: rgba(68, 68, 68, 0.5);
         padding: 10px;
         border-radius: 10px;
     }
