@@ -16,8 +16,7 @@ nav {
     position: absolute;
     display: flex;
     height: 80px;
-    margin-top: -8px;
-    margin-left: 10px;
+    margin-top: -5px;
 }
 
 .redesSociales a {
@@ -54,23 +53,22 @@ nav ul li a {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    text-decoration-color: none;
     letter-spacing: 0.15em;
     display: inline-block;
-    padding: 20px 15px;
+    padding: 15px;
 }
 
 nav ul li a:after {
     position: relative;
     align-content: center;
-    margin-top: -20px;
+    margin-top: -22px;
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
     display: block;
-    height: 2px;
     left: 100%;
-    background: rgb(255, 255, 255);
+    border: solid 1px;
+    border-image: var(--dorado);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -92,6 +90,7 @@ nav ul li a:hover {
     margin-right: 10px;
     cursor: pointer;
     display: none;
+    transition: 1s;
 }
 
 .checkbtn #spn1,
@@ -99,9 +98,10 @@ nav ul li a:hover {
 #spn3 {
     display: flex;
     content: '';
-    background-color: rgb(255, 255, 255);
-    width: 30px;
-    height: 3px;
+    border: solid 2px;
+    border-image: var(--dorado);
+    width: 32px;
+    height: 2px;
     transition: all 400ms ease;
     position: relative;
 }
@@ -137,9 +137,9 @@ nav ul li a:hover {
         position: fixed;
         display: block;
         z-index: 10;
-        left: 50%;
-        top: 60px;
-        margin-left: -15px;
+        background-color: rgb(0 0 0 / 50%);
+        padding: 10px;
+        border-radius: 10px;
     }
     .inicioNav {
         margin-top: 100px;
@@ -151,11 +151,11 @@ nav ul li a:hover {
         width: 100%;
         height: 100%;
         background-image: linear-gradient(-0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
-        top: -100%;
+        right: -100%;
         text-align: center;
         transition: 1s;
         z-index: 5;
-        margin: 0px;
+        top: 0;
     }
     nav ul li {
         display: block;
@@ -168,18 +168,21 @@ nav ul li a:hover {
     }
     #check:checked~ul {
         opacity: 100%;
-        top: 0;
+        right: 0;
     }
     #check:checked~.checkbtn #spn1 {
         transform: rotate(140deg);
         top: 10px;
+        background-color: white;
     }
     #check:checked~.checkbtn #spn2 {
         opacity: 0;
+        background-color: white;
     }
     #check:checked~.checkbtn #spn3 {
         transform: rotate(-140deg);
-        top: -11px;
+        top: -13px;
+        background-color: white;
     }
     nav ul li a:after {
         left: 50%;
@@ -193,5 +196,34 @@ nav ul li a:hover {
         position: absolute;
         display: flex;
         height: 80px;
+        left: 50%;
+        right: 50%;
+    }
+}
+
+@media (max-width: 380px) {
+    .checkbtn {
+        margin-top: 90px;
+        margin-left: -1px;
+    }
+    .botonArriba {
+        margin-top: 0px!important;
+    }
+    nav ul {
+        opacity: 0;
+        position: fixed;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(-0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+        top: -100%;
+        text-align: center;
+        transition: 1s;
+        z-index: 5;
+        right: 0;
+    }
+    #check:checked~ul {
+        opacity: 100%;
+        top: 0;
     }
 }
