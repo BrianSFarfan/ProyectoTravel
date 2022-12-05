@@ -28,10 +28,10 @@ body::-webkit-scrollbar-thumb {
     background-image: linear-gradient(0deg, rgba(25, 0, 255, 0.5), rgba(87, 85, 85, 0.274), rgba(23, 23, 24, 0.986)), url('../img/aeroWall.jpeg');
     background-size: cover;
     background-position: center;
-    width: 100vw;
     z-index: 1;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 60% 90%, 50% 80%, 40% 90%, 0 90%);
-    border: solid 83px;
+    border: solid;
+    border-bottom-width: 11vh;
     border-image: var(--dorado);
     border-top: none;
     border-left: none;
@@ -70,6 +70,51 @@ body::-webkit-scrollbar-thumb {
 .CardInicio {
     display: flex;
 }
+
+.botonSrlAbajo {
+    display: flex;
+    border: none;
+    background: none;
+    color: rgb(53, 52, 52);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-duration: 1.5s;
+    animation-name: flechitAbajo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.botonSrlAbajo :hover {
+    transform: scale(1.1);
+    color: rgb(37, 0, 245);
+}
+
+.flechita {
+    transition: 0.3s;
+    color: rgb(182, 182, 182);
+    font-size: 3rem;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    padding: 5px;
+}
+
+
+/*ANIMACION KEY*/
+
+@keyframes flechitAbajo {
+    from {
+        margin-top: 37vh;
+    }
+    to {
+        margin-top: 40vh;
+    }
+}
+
+
+/*FIN DE ANIMACION*/
 
 
 /*VENTANAS*/
@@ -231,11 +276,10 @@ hr {
 }
 
 .cuadroTitulo {
-    margin: 35px 0;
+    margin: 0 0 35px 0;
     padding: 40px 40px;
-    background-color: black;
     border-color: white;
-    color: white;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.26);
 }
 
 .TextInicio {
