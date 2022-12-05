@@ -101,7 +101,7 @@ nav ul li a:hover {
     border: solid 2px;
     border-image: var(--dorado);
     width: 32px;
-    height: 2px;
+    height: 0vh;
     transition: all 400ms ease;
     position: relative;
 }
@@ -173,16 +173,13 @@ nav ul li a:hover {
     #check:checked~.checkbtn #spn1 {
         transform: rotate(140deg);
         top: 10px;
-        background-color: white;
     }
     #check:checked~.checkbtn #spn2 {
         opacity: 0;
-        background-color: white;
     }
     #check:checked~.checkbtn #spn3 {
         transform: rotate(-140deg);
         top: -13px;
-        background-color: white;
     }
     nav ul li a:after {
         left: 50%;
