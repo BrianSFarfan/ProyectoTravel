@@ -22,6 +22,17 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50px;
 }
 
+.btnInicio {
+    background-color: transparent;
+}
+
+.nosotros {
+    background-image: url(../img/IconAvion.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .banner-image1 {
     padding: 0 150px;
     background-attachment: fixed;
@@ -40,9 +51,10 @@ body::-webkit-scrollbar-thumb {
 
 .banner-image2 {
     background-attachment: fixed;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.363), rgba(23, 23, 24, 0.986)), url('../img/Fondo1.jpg');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.295), rgba(0, 0, 0, 0.363), rgba(23, 23, 24, 0.986)), url('../img/Fondo3.jpg');
     background-size: cover;
     background-position: center;
+    backdrop-filter: grayscale(100%);
     color: white;
     padding: 2rem 0;
 }
@@ -273,9 +285,11 @@ hr {
 .titulos {
     letter-spacing: 5px;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
 }
 
+
+/*
 .CuadroTitulo {
     margin: 0 0 35px 0;
     border-color: white;
@@ -288,6 +302,7 @@ hr {
     background-color: white;
     clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
 }
+*/
 
 .TextInicio {
     font-size: 4rem;
