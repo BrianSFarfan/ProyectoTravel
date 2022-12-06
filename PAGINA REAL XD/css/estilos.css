@@ -145,6 +145,15 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
 }
 
+.videoYoutube {
+    width: 100%;
+    height: 315px;
+    border-radius: 10px;
+    border: 5px inset;
+    padding: 10px;
+    border-image: var(--dorado);
+}
+
 
 /*ANIMACION KEY*/
 
@@ -363,7 +372,7 @@ hr {
     height: 300px;
 }
 
-#botonArriba{
+#botonArriba {
     position: fixed;
     bottom: 20px;
     right: 20px;
