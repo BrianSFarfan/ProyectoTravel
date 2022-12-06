@@ -363,6 +363,13 @@ hr {
     height: 300px;
 }
 
+#botonArriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+}
+
 @media (max-width: 850px) {
     .TextInicio {
         font-size: 4rem;
