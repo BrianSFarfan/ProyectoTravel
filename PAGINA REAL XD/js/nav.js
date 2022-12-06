@@ -9,5 +9,11 @@ window.onscroll = function() {
     } else {
         document.getElementById("botoNav").className = "checkbtn";
     }
-};
 
+
+    if (y > 200) {
+        document.getElementById("NavCompleto").className = "navFixedDark";
+    } else {
+        document.getElementById("NavCompleto").className = "";
+    }
+};

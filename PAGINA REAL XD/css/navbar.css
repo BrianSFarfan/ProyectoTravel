@@ -38,8 +38,17 @@ nav {
 
 nav ul {
     padding: 0;
+    padding-left: 50px;
     list-style: none;
     display: table;
+    position: fixed;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 10% 90%);
+    transition: 0.5s;
+}
+
+.navFixedDark {
+    background-color: rgba(2, 2, 2, 0.493);
+    backdrop-filter: blur(5px);
 }
 
 nav ul li {
@@ -150,13 +159,19 @@ nav ul li a:hover {
         overflow: hidden;
         width: 100%;
         height: 100%;
-        backdrop-filter: blur(10px);
         background-image: linear-gradient(-0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 100%);
         right: -100%;
+        backdrop-filter: blur(10px);
         text-align: center;
         transition: 1s;
         z-index: 5;
         top: 0;
+        clip-path: none;
+        padding-left: 0;
+    }
+    .navFixedDark {
+        background-color: rgba(2, 2, 2, 0);
+        backdrop-filter: none;
     }
     nav ul li {
         display: block;
