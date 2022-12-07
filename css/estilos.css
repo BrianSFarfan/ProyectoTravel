@@ -60,13 +60,14 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192);
     position: fixed;
-    right: 15px;
     bottom: 15px;
     position: fixed;
     width: 5vh;
     height: 5vh;
     border: 2px solid;
     border-image: var(--dorado);
+    right: -100px;
+    opacity: 0;
 }
 
 .btnHaciaArriba:hover {
@@ -76,9 +77,9 @@ body::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.btnA-Desactivado {
-    right: -100px;
-    opacity: 0;
+.btnA-activado {
+    right: 15px;
+    opacity: 1;
 }
 
 .nosotros {
