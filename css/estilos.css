@@ -44,30 +44,44 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
 }
 
-#botonArriba {
-    background-image: linear-gradient(-0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    border-radius: 12px;
-}
-
-#botonArriba :hover {
-    top: 10;
-}
-
 .flechaHaciaArriba {
+    font-size: 3vh;
     background: linear-gradient(190deg, #ffd105 0%, #c78904 50%, #f3cf04 100%);
     -webkit-background-clip: text;
     color: transparent;
-    transition: 0.3s;
+}
+
+.btnHaciaArriba {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    z-index: 8;
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.192);
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    position: fixed;
+    width: 5vh;
+    height: 5vh;
+    border: 2px solid;
+    border-image: var(--dorado);
+}
+
+.btnHaciaArriba:hover {
+    transition: 0.5s;
+    bottom: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.btnA-Desactivado {
+    right: -100px;
+    opacity: 0;
 }
 
 .nosotros {
-    padding: 40px 0;
     background-image: url(../img/EstrellaFondo.png);
     background-size: cover;
     background-position: left;
@@ -395,15 +409,6 @@ hr {
     height: 300px;
 }
 
-#botonArriba {
-    position: fixed;
-    right: -100px;
-    bottom: 20px;
-    width: 40px;
-    transition: all 1s;
-    z-index: 3;
-}
-
 @media (max-width: 850px) {
     .TextInicio {
         font-size: 4rem;
@@ -473,6 +478,7 @@ hr {
         border-bottom-width: 2px;
         border-top-width: 2px;
         opacity: 0.7;
+        clip-path: polygon(99% 0, 100% 50%, 99% 100%, 1% 100%, 0% 50%, 1% 0);
     }
     .btnInicio:hover {
         color: rgb(255, 255, 255);
@@ -482,6 +488,15 @@ hr {
 }
 
 @media (max-width: 330px) {
+    .btnInicio {
+        background-color: rgba(0, 0, 0, 0.199);
+        color: white;
+        width: 80%;
+        border-bottom-width: 2px;
+        border-top-width: 2px;
+        opacity: 0.7;
+        clip-path: polygon(98% 0, 100% 50%, 98% 100%, 2% 100%, 0% 50%, 2% 0);
+    }
     .titulos {
         font-size: 30px;
     }
