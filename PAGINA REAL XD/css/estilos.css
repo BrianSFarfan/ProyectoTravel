@@ -44,6 +44,28 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
 }
 
+#botonArriba {
+    background-image: linear-gradient(-0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 12px;
+}
+
+#botonArriba :hover {
+    top: 10;
+}
+
+.flechaHaciaArriba {
+    background: linear-gradient(190deg, #ffd105 0%, #c78904 50%, #f3cf04 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 0.3s;
+}
+
 .nosotros {
     padding: 40px 0;
     background-image: url(../img/EstrellaFondo.png);
@@ -145,6 +167,7 @@ body::-webkit-scrollbar-thumb {
     height: 4.5rem;
     padding: 5px;
 }
+
 .videoYoutube {
     width: 100%;
     height: 315px;
@@ -372,10 +395,10 @@ hr {
     height: 300px;
 }
 
-#botonArriba{
+#botonArriba {
     position: fixed;
     right: -100px;
-    bottom: 20px; 
+    bottom: 20px;
     width: 40px;
     transition: all 1s;
     z-index: 3;
