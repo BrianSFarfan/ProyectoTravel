@@ -45,6 +45,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nosotros {
+    padding: 40px 0;
     background-image: url(../img/EstrellaFondo.png);
     background-size: cover;
     background-position: left;
