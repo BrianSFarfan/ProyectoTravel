@@ -197,10 +197,10 @@ body::-webkit-scrollbar-thumb {
 
 @keyframes flechitAbajo {
     from {
-        margin-top: 37vh;
+        margin-top: 38vh;
     }
     to {
-        margin-top: 40vh;
+        margin-top: 41vh;
     }
 }
 
