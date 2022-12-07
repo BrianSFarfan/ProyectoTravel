@@ -9,7 +9,7 @@ window.onscroll = function() {
     } else {
         document.getElementById("botoNav").className = "checkbtn";
     }
-};
+
 
 function irArriba(){
     window.addEventListener('scroll',()=>{
@@ -25,3 +25,10 @@ function irArriba(){
     })
 }
 irArriba();
+
+    if (y > 200) {
+        document.getElementById("NavCompleto").className = "navFixedDark";
+    } else {
+        document.getElementById("NavCompleto").className = "";
+    }
+};

@@ -38,8 +38,17 @@ nav {
 
 nav ul {
     padding: 0;
+    padding-left: 50px;
     list-style: none;
     display: table;
+    position: fixed;
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 10% 90%);
+    transition: 0.5s;
+}
+
+.navFixedDark {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 nav ul li {
@@ -150,13 +159,19 @@ nav ul li a:hover {
         overflow: hidden;
         width: 100%;
         height: 100%;
-        backdrop-filter: blur(10px);
         background-image: linear-gradient(-0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.5) 100%);
         right: -100%;
+        backdrop-filter: blur(10px);
         text-align: center;
         transition: 1s;
         z-index: 5;
         top: 0;
+        clip-path: none;
+        padding-left: 0;
+        border-radius: 30% 0 0 30%;
+    }
+    .navFixedDark {
+        background-color: rgba(2, 2, 2, 0);
     }
     nav ul li {
         display: block;
@@ -170,6 +185,7 @@ nav ul li a:hover {
     #check:checked~ul {
         opacity: 100%;
         right: 0;
+        border-radius: 0;
     }
     #check:checked~.checkbtn #spn1 {
         transform: rotate(140deg);
@@ -221,6 +237,7 @@ nav ul li a:hover {
         transition: 1s;
         z-index: 5;
         right: 0;
+        border-radius: 0 0 30% 30%;
     }
     #check:checked~ul {
         opacity: 100%;
