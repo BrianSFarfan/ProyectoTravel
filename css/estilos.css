@@ -90,7 +90,7 @@ body::-webkit-scrollbar-thumb {
 .nosotros {
     background-image: url(../img/EstrellaFondo.png);
     background-size: cover;
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -429,6 +429,7 @@ hr {
     align-items: center;
     text-align: center;
     margin: 50px 10px;
+    padding: 2px 10px;
 }
 
 .iconsNosotros {
@@ -451,12 +452,13 @@ nav ul li a:hover {
 }
 
 .btnMas {
+    margin-bottom: 30px;
     display: inline-block;
     background-color: #ffffff;
     border: none;
     text-align: center;
     font-size: 1rem;
-    padding: 0 20px;
+    padding: 0 10px;
     transition: all 0.5s;
     cursor: pointer;
     border: 3px solid;
@@ -486,6 +488,23 @@ nav ul li a:hover {
 .btnMas:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+.subePoco {
+    transition: 1s;
+}
+
+.subePoco:hover {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.cercaPoco {
+    transition: 1s;
+}
+
+.cercaPoco:hover {
+    transform: scale(1.03);
 }
 
 @media (max-width: 850px) {
