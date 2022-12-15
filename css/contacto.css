@@ -1,0 +1,25 @@
+.contacDerecha {
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-image: url(../img/puenteMujer.jpeg);
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacIzquierda {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardContacto {
+    --bs-gutter-x: 0rem !important;
+    display: flex;
+    margin: 0%;
+}

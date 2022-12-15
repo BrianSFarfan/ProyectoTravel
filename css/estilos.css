@@ -90,7 +90,7 @@ body::-webkit-scrollbar-thumb {
 .nosotros {
     background-image: url(../img/EstrellaFondo.png);
     background-size: cover;
-    background-position: center;
+    background-position: ce;
     background-repeat: no-repeat;
 }
 
