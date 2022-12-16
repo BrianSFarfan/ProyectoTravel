@@ -51,6 +51,12 @@
     width: 180px;
 }
 
+.contactos {
+    padding: 0px 25px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(43, 42, 42, 0.438);
+}
+
 .iconFondoContactos {
     background-color: rgba(255, 255, 255, 0.2);
     padding: 15px;
@@ -87,7 +93,11 @@
     font-family: 'Poppins', sans-serif;
     padding: 10px;
     border-radius: 5px;
-    border: none;
+    border: transparent;
+}
+
+.from-input input:focus {
+    border: transparent;
 }
 
 .from-input textarea {
@@ -99,6 +109,10 @@
     font-family: 'Poppins', sans-serif;
     padding: 10px;
     border-radius: 5px;
+}
+
+.from-input textarea:focus {
+    border-color: red;
 }
 
 .Enviar {
