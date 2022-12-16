@@ -27,7 +27,7 @@
             <span id="spn2"></span>
             <span id="spn3"></span>
           </label>
-            <ul id="NavCompleto">
+            <ul id="NavCompleto " style="background-color: rgba(117, 117, 117, 0.3);backdrop-filter: blur(5px);">
                 <li class="inicioNav"><a href="#inicio ">Inicio</a></li>
                 <li><a href="#museo ">Galeria</a></li>
                 <li><a href="#exhibicion ">Historia</a></li>
@@ -36,20 +36,54 @@
         </nav>
     </header>
     <section>
-        <div class=" containerContacto">
-            <div class="row cardContacto">
-                <div class="col-md contacIzquierda">
-                    <h2>Escríbenos</h2>
-                    <div>
+        <div class="row cardContacto">
+            <div class="col-md contacIzquierda ">
+                <center>
+                    <h2 class="Escribinos">Escríbenos</h2>
+                </center>
+                <form id="form">
+                    <div class="row Formulario" style="margin: auto;">
+                        <div class="col-md-6 from-input">
+                            <label for="FormNombre">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-md-6 from-input">
+                            <label for="FormApellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                        </div>
+                        <div class="col-md-7 from-input">
+                            <label for="FormEmail">Email</label>
+                            <input type="email" id="mail_usu" name="mail_usu" placeholder="email@ejemplo.com" required>
+                        </div>
+                        <div class="col-md-5 from-input">
+                            <label for="FormEmail">Telefono</label>
+                            <input type="int" id="telefono" name="telefono" placeholder="+54 9 1138949280" required>
+                        </div>
+                        <div class="from-input">
+                            <label for="FormAsunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                        </div>
 
+                        <div class="from-input">
+                            <label for="FormMensaje">Mensaje</label>
+                            <textarea type="textarea" name="msg" id="msg" style="resize: none;" placeholder="Mensaje..." required></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 contacDerecha">
-                    <h2>Contactanos</h2>
+                </form>
+                <center>
+                    <button type="submit" value="Send Email" id="button" class='Enviar'> <span>Enviar</span></button>
+                </center>
+            </div>
+            <div class="col-md-6 contacDerecha">
+
+                <div class="contactos">
+                    <h2 class="contactanos">Contactanos</h2>
+                    <p class="letraContacto"> <i class="bi bi-whatsapp iconFondoContactos"></i> Telefono </p>
+                    <p class="letraContacto"><i class="bi bi-envelope iconFondoContactos"></i> E-Mail</p>
+                    <p class="letraContacto"> <i class="bi bi-whatsapp iconFondoContactos"></i> Website </p>
                 </div>
             </div>
         </div>
-
     </section>
     <div class="text-center p-3" style="background-color: rgb(8, 0, 73); color: rgba(255, 255, 255, 0.514);">
         © 2022 Copyright:

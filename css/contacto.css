@@ -1,3 +1,8 @@
+::selection {
+    background-color: rgb(0, 0, 255) !important;
+    color: rgb(255, 255, 255);
+}
+
 .contacDerecha {
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -9,17 +14,106 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .contacIzquierda {
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .cardContacto {
     --bs-gutter-x: 0rem !important;
     display: flex;
     margin: 0%;
+}
+
+.Escribinos {
+    margin: 5vh 0;
+    display: flex;
+    justify-content: center;
+    border: 5px solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-image: linear-gradient(-225deg, rgb(22, 5, 255) 0%, rgb(0, 17, 255) 50%, rgb(10, 9, 95) 100%) 1;
+    width: 180px;
+}
+
+.contactanos {
+    margin: 5vh 0;
+    display: flex;
+    justify-content: center;
+    border: 3px solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-image: linear-gradient(-225deg, rgb(255, 209, 5) 0%, rgb(199, 137, 4) 50%, rgb(243, 207, 4) 100%) 1;
+    width: 180px;
+}
+
+.iconFondoContactos {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.letraContacto {
+    font-size: 1.5rem;
+    margin: 40px 0;
+}
+
+.Formulario {
+    margin: auto;
+    width: 40vw;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+}
+
+.from-input {
+    margin: 0;
+}
+
+.from-input label {
+    margin-top: 0px;
+}
+
+.from-input input {
+    margin: 10px 0;
+    width: 100%;
+    height: 35px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.from-input textarea {
+    border: none;
+    margin-top: 5px;
+    width: 100%;
+    height: 100px;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Enviar {
+    display: flex;
+    margin: auto;
+    margin-top: 2vh;
+    color: white;
+    background-image: linear-gradient(-225deg, rgb(22, 5, 255) 0%, rgb(8, 15, 105) 50%, rgb(8, 4, 243) 100%);
+    padding: 5px;
+    width: 50%;
+    border: none;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+.Enviar:hover {
+    transform: scale(1.05);
 }

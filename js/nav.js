@@ -11,7 +11,7 @@ window.onscroll = function() {
     }
 
     if (y > 200) {
-        document.getElementById("NavCompleto").className = "navFixedDark";
+        document.getElementById("NavCompleto").className = "navFixedDark ";
         document.getElementById("botonArriba").className = "btnHaciaArriba btnA-activado";
     } else {
         document.getElementById("NavCompleto").className = "";
