@@ -48,12 +48,14 @@ body {
 }
 
 .contactos {
-    padding: 0px 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 25px;
     backdrop-filter: blur(4px);
     border-radius: 10px;
     background-color: rgba(50, 50, 50, 0.438);
-    width: 60%;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.151);
+    width: 70% !important;
 }
 
 .contactanos {
@@ -67,11 +69,15 @@ body {
 }
 
 .redesSocialesContac {
+    margin: auto;
     align-items: center;
     justify-content: center;
-    z-index: 11;
     display: flex;
-    height: 80px;
+    height: 50px;
+    border-radius: 50px;
+    width: auto !important;
+    backdrop-filter: blur(15px);
+    background-color: rgba(50, 50, 50, 0.438);
 }
 
 .redesSocialesContac a {
@@ -138,10 +144,10 @@ body {
     padding: 10px;
     border-radius: 2px;
     border: transparent;
-    transition: 0.2s;
 }
 
 .from-input input:focus {
+    transition: 0.1s;
     border-bottom: 2px solid;
     border-image: linear-gradient(-225deg, rgb(22, 5, 255) 0%, rgb(0, 17, 255) 50%, rgb(10, 9, 95) 100%) 1;
     outline: none
@@ -156,10 +162,10 @@ body {
     padding: 10px;
     border-radius: 5px;
     border: transparent;
-    transition: 0.2s;
 }
 
 .from-input textarea:focus {
+    transition: 0.1s;
     border-bottom: 2px solid;
     border-image: linear-gradient(-225deg, rgb(22, 5, 255) 0%, rgb(0, 17, 255) 50%, rgb(10, 9, 95) 100%) 1;
     outline: none
