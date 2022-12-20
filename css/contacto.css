@@ -24,7 +24,6 @@ body {
     justify-content: center;
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
     z-index: 5;
-    transition: 1s;
 }
 
 .contacIzquierda {
@@ -221,10 +220,44 @@ body {
     }
 }
 
-@media (max-width: 850px) {
-    .contacIzquierda {}
+
+/*GRID CONTAINER FILAS Y COLUMNAS*/
+
+.grid1 {
+    grid-area: grid1;
+}
+
+.grid2 {
+    grid-area: grid2;
+}
+
+@media (max-width: 767px) {
+    .grid-container>* {
+        display: grid !important;
+        grid-template-areas: "grid2" "grid1" !important;
+    }
+    .contacIzquierda {
+        height: 100vh;
+    }
+    .contacIzquierda {
+        background-attachment: fixed;
+    }
     .contacDerecha {
-        display: grid;
+        height: 100vh;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+        z-index: 5;
+    }
+    .centradoForm {
+        position: static;
+        margin-top: 50px;
+        top: 0%;
+        transform: translate( 0%);
+    }
+    .Formulario {
+        width: 80vw;
     }
 }
