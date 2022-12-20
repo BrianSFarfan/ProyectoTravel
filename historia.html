@@ -1,167 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portafolio de los miembros de programacion de Prufex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRAVEL</title>
-    <link rel="icon" href="img/Logo.ico">
-    <!--CSS-->
-    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>TRAVEL | HISTORIA</title>
+    <link rel="shortcut icon" href="img/LOGO-NEGRO.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/histo.css">
 
-    <!--FIN DE CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-
 <body>
-    <header>
-        <div class="redesSociales" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
-            <a href=" ">
-                <i class="bi bi-facebook iconos"></i>
-            </a>
-            <a href=" ">
-                <i class="bi bi-twitter iconos"></i>
-            </a>
-            <a href=" ">
-                <i class="bi bi-youtube iconos"></i>
-            </a>
-            <a href=" ">
-                <i class="bi bi-instagram iconos"></i>
-            </a>
-            <a href=" ">
-                <i class="bi bi-whatsapp iconos"></i>
-            </a>
-        </div>
-        <nav>
 
-            <input type="checkbox" id="check">
-            <label for="check" id="botoNav" class="checkbtn">
-        <span id="spn1"></span>
-        <span id="spn2"></span>
-        <span id="spn3"></span>
-      </label>
+    <header class="header" id="header">
 
-
-
-            <ul>
-                <li class="inicioNav"><a href="#inicio ">inicio</a></li>
-                <li><a href="#museo ">galeria</a></li>
-                <li><a href="#exhibicion ">Historia</a></li>
-                <li><a href="#visita ">Contactos</a></li>
-            </ul>
-
-        </nav>
+     
     </header>
-    <!--BANNER 1------------------------------------------------------------------------------------>
 
-    <div class="historia">
+    <main class="main  content-enfocado ">
+        <div class=" desenfoque">
+            <!--NOSOTROS-->
+            <br>
+            <section id="sq" class="section">
 
-        <center class="histo_cont">
+                <div>
 
-            <h1>HISTORIA</h1>
-
-        </center>
-        
-    </div>
-
-    <!--FIN DE CONTENIDO-->
-    <!--FOOTER-->
-    <footer class="footerF text-center ">
-        <!-- Grid container -->
-        <div class="container pb-0" style="padding: 17px 10px 10px 10px;">
-            <section class="">
-                <div class="container text-center text-md-start mt-5">
-                    <!-- Grid row -->
-                    <div class="row mt-3">
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                            <!-- Content -->
-                            <h6 class="text-uppercase fw-bold">Transfer International Travel</h6>
-                            <hr class="hrFooter">
-                            <p>
-                                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            </p>
+                    <center>
+                        <div align="center" style="margin-top: -30px;">
+                            <h1 style="color: #ffffff;font-size: 2rem;">HISTORIA</h1>
+                            <br>
                         </div>
-                        <!-- Grid column -->
 
-                        <!-- Grid column -->
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 navlinkFooter">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold">Secciones</h6>
-                            <hr class="hrFooter">
-                            <p>
-                                <a href="#!">Inicio</a>
-                            </p>
-                            <p>
-                                <a href="#!">Galeria</a>
-                            </p>
-                            <p>
-                                <a href="#!">Historia</a>
-                            </p>
-                            <p>
-                                <a href="#!">Contacto</a>
-                            </p>
+                        <div class="NavPorta">
+                            <button type="button" onclick="mostoFias(); activarButtFias();" class="botonPort noDark" id="boton-fiasche" aria-label="boton">
+                                <img id="imgFias" src="img/1999.png" alt="" srcset="" class="noDark">
+                            </button>
+                            <button type="button" onclick="mostoBri(); activarButtBri();" class="botonPort noDark" id="boton-brian" aria-label="boton">
+                                <img id="imgBri" src="img/2004.png" alt="" srcset="" class="noDark">
+                            </button>
+                            <button type="button" onclick="mostoSol(); activarButtSol();" class="botonPort noDark" id="boton-soler" aria-label="boton">
+                                <img id="imgSol" src="img/2014.png" alt="" srcset="" class="noDark">
+                            </button>
+                            
                         </div>
 
 
-                        <!-- Grid column -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold">Contacto</h6>
-                            <hr class="hrFooter">
-                            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                            <p><i class="fas fa-phone mr-3"></i> + 54 9 1155702584</p>
+                        <!--------------------------------------------------PORTAFOLIO 1----------------------------------------------------->
 
-                        </div>
-                        <!-- Grid column -->
+                        <section class="section product" id="af">
+                            <div class="portaGente" align="left">
+                                <!--PERSONA-->
+                                <h1 class="tituloPorta" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">"TITULO
+                                    <font class="noDark" style="color: rgb(49, 49, 216);">EPICO"</font>
+                                </h1>
+                                <!--OFICIO-->
+                                <p class="subTituloPorta" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">AÑO / SUCESO</p>
+                                <!--LENGUAJES-->
+                         
+                                <!--TRABAJOS-->
+
+                                <div class="row">
+                                    <div class="Cartelera" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1700">
+                                   
+                                        <p style="width: 60rem; text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, obcaecati. Ipsum vitae, modi accusantium iusto, aspernatur iste delectus neque excepturi minima voluptatum quis suscipit quam at ratione nesciunt assumenda consectetur quae. Reiciendis sequi hic eaque impedit adipisci molestiae aliquam nesciunt est dolore? Totam distinctio eos quae illo incidunt culpa, amet porro reprehenderit voluptatibus cum alias eligendi, doloribus ab nihil, eius sapiente modi quia dignissimos maiores quaerat. Voluptatibus dolore quisquam corporis ratione voluptatem dignissimos culpa hic, itaque harum non delectus quae qui doloremque dicta, voluptate officiis ad architecto! Voluptatum sapiente quo delectus! Incidunt adipisci, dolorem aspernatur tempore omnis reiciendis nemo autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, libero velit perferendis atque laborum iste in quo labore ullam reprehenderit cumque aliquid, sunt vitae voluptatum nemo expedita illum totam necessitatibus veniam voluptate. Facere dignissimos neque corrupti ea accusantium incidunt provident! Itaque, ut. Quia eos soluta ea ratione, at blanditiis saepe!</p>
+    
+                                    </div>
+                                    <div data-aos="fade-up" style="transition: 2s; width: 500px; height: 400px; z-index: 2; margin-left: 75rem; margin-top: -15rem; background-color: grey; border-radius: 10px;">
+                                    </div>
+                                </div>
+                               
+
+
+                        </section>
+                        <!--------------------------------------------------PORTAFOLIO 2------------------------------------------------------->
+
+                        <section class="section product" id="bf">
+
+                            <div class="portaGente" align="left">
+                                <!--PERSONA-->
+                                <h1 class="tituloPorta" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">"TITULO
+                                    <font class="noDark" style="color: rgb(49, 49, 216);">EPICO"</font>
+                                </h1>
+                                <!--OFICIO-->
+                                <p class="subTituloPorta" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">AÑO / SUCESO</p>
+                                <!--LENGUAJES-->
+                            
+                                <!--TRABAJOS-->
+                                <div class="row">
+                                    <div class="Cartelera" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1700">
+                                   
+                                        <p style="width: 60rem; text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, obcaecati. Ipsum vitae, modi accusantium iusto, aspernatur iste delectus neque excepturi minima voluptatum quis suscipit quam at ratione nesciunt assumenda consectetur quae. Reiciendis sequi hic eaque impedit adipisci molestiae aliquam nesciunt est dolore? Totam distinctio eos quae illo incidunt culpa, amet porro reprehenderit voluptatibus cum alias eligendi, doloribus ab nihil, eius sapiente modi quia dignissimos maiores quaerat. Voluptatibus dolore quisquam corporis ratione voluptatem dignissimos culpa hic, itaque harum non delectus quae qui doloremque dicta, voluptate officiis ad architecto! Voluptatum sapiente quo delectus! Incidunt adipisci, dolorem aspernatur tempore omnis reiciendis nemo autem.</p>
+    
+                                    </div>
+                                    <div data-aos="fade-up" style="transition: 2s; width: 500px; height: 400px; z-index: 2; margin-left: 75rem; margin-top: -11rem; background-color: grey; border-radius: 10px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+                        <!--------------------------------------------------PORTAFOLIO 2------------------------------------------------------->
+
+                        <section class="section product" id="ds">
+
+                            <div class="portaGente" align="left">
+                                <!--PERSONA-->
+                                <h1 class="tituloPorta" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">"TITULO
+                                    <font class="noDark" style="color: rgb(49, 49, 216);">EPICO"</font>
+                                </h1>
+                                <!--OFICIO-->
+                                <p class="subTituloPorta" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">AÑO / SUCESO</p>
+                                <!--LENGUAJES-->
+                             
+                                <!--TRABAJOS-->
+                                <div class="row">
+                                    <div class="Cartelera" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1700">
+                                   
+                                        <p style="width: 60rem; text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, obcaecati. Ipsum vitae, modi accusantium iusto, aspernatur iste delectus neque excepturi minima voluptatum quis suscipit quam at ratione nesciunt assumenda consectetur quae. Reiciendis sequi hic eaque impedit adipisci molestiae aliquam nesciunt est dolore? Totam distinctio eos quae illo incidunt culpa, amet porro reprehenderit voluptatibus cum alias eligendi, doloribus ab nihil, eius sapiente modi quia dignissimos maiores quaerat. Voluptatibus dolore quisquam corporis ratione voluptatem dignissimos culpa hic, itaque harum non delectus quae qui doloremque dicta, voluptate officiis ad architecto! Voluptatum sapiente quo delectus! Incidunt adipisci, dolorem aspernatur tempore omnis reiciendis nemo autem.</p>
+    
+                                    </div>
+                                    <div data-aos="fade-up" style="transition: 2s; width: 500px; height: 400px; z-index: 2; margin-left: 75rem; margin-top: -11rem; background-color: grey; border-radius: 10px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!--------------------------------------------------PORTAFOLIO 2------------------------------------------------------->
+
+                    </center>
                     </div>
-                    <!-- Grid row -->
-                </div>
             </section>
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-outline-light redondoBotones m-1" href="#!" role="button"><i class="bi bi-facebook iconos " style="margin-left: 1px;"></i></a>
+            </div>
+    </main>
 
-                <!-- Twitter -->
-                <a class="btn btn-outline-light redondoBotones m-1" href="#!" role="button"><i class="bi bi-twitter iconos"></i></a>
 
-                <!-- youtube -->
-                <a class="btn btn-outline-light redondoBotones m-1" href="#!" role="button"><i class="bi bi-youtube iconos"></i></a>
+    <!--Footer-->
+   
 
-                <!-- Instagram -->
-                <a class="btn btn-outline-light redondoBotones m-1" href="#!" role="button"><i class="bi bi-instagram iconos"></i></a>
 
-                <!-- whatsapp -->
-                <a class="btn btn-outline-light redondoBotones m-1" href="#!" role="button"><i class="bi bi-whatsapp iconos"></i></a>
-            </section>
-            <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollupicon"></i>
+    </a>
 
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(17, 9, 90, 0.877); color: rgba(255, 255, 255, 0.514);">
-            © 2022 Copyright:
-            <a style="text-decoration: none;color: rgba(255, 255, 255, 0.514);" href="https://prufex.com.ar">prufex.com.ar</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!--FIN DE FOOTER-->
+
+   
+    <script src="js/historia.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--MODAL-->
+    
 </body>
-<!--JS-->
-<script src="Bootstrap/js/bootstrap.min.js "></script>
-<link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css ">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
-<script src="JS/nav.js"></script>
-<script>
-    AOS.init();
-</script>
-<!--FIN DE JS-->
 
 </html>
