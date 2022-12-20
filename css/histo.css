@@ -441,365 +441,6 @@
         justify-self: center;
     }
     
-    .pdcontainer {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-        padding-top: 1rem;
-    }
-    
-    .pdcontent {
-        position: relative;
-        background: #0c0b0b;
-        border-radius: 1rem;
-        padding: 1.5rem 0 1rem 0;
-        text-align: center;
-        overflow: hidden;
-    }
-    
-    .productimg {
-        width: 90px;
-        transition: .3s;
-    }
-    
-    .pdsub,
-    .pdprice {
-        display: block;
-    }
-    
-    .pdsub {
-        font-size: .75rem;
-        margin-bottom: .5rem;
-    }
-    
-    .pdtitle,
-    .pdprice {
-        color: #fff;
-        font-weight: 500;
-        font-size: .938rem;
-    }
-    
-    .pdbut {
-        display: inline-flex;
-        padding: .5rem;
-        border-radius: 15px 0 0 0;
-        border-bottom: 0;
-        border-right: 0;
-        position: absolute;
-        right: -3rem;
-        bottom: 0;
-    }
-    
-    .pdbut svg {
-        width: 20px;
-    }
-    
-    .pdbut:hover {
-        color: black;
-    }
-    
-    .producticon {
-        font-size: 1.25rem;
-        color: rgb(255, 255, 255);
-    }
-    
-    .producticon:hover {
-        font-size: 1.25rem;
-        color: rgb(0, 0, 0);
-    }
-    
-    .pdcontent:hover .productimg {
-        transform: translateY(-.5rem);
-    }
-    
-    .pdcontent:hover .pdbut {
-        right: 0;
-    }
-    
-    .dscont {
-        background: #0c0b0b;
-        border-radius: 1rem;
-    }
-    
-    .disdata {
-        text-align: center;
-    }
-    
-    .distitle {
-        align-items: left;
-        font-size: 1.25rem;
-        margin-bottom: 2rem;
-    }
-    
-    .disimg {
-        width: 200px;
-        justify-self: center;
-    }
-    
-    .newcont {
-        padding-top: 1rem;
-    }
-    
-    .newimg {
-        width: 120px;
-        margin-bottom: .5rem;
-        transition: .3s;
-    }
-    
-    .newcontent {
-        position: relative;
-        background: #0c0b0b;
-        width: 242px;
-        padding: 2rem 0 1.5rem 0;
-        border-radius: .75rem;
-        text-align: center;
-        overflow: hidden;
-        cursor: grab;
-    }
-    
-    .newtag {
-        position: absolute;
-        top: 8%;
-        left: 8%;
-        background-color: var( --naranja);
-        color: #fff;
-        font-size: .813rem;
-        padding: .25rem .5rem;
-        border-radius: .25rem;
-    }
-    
-    .newti {
-        font-size: .938rem;
-        font-weight: 500;
-    }
-    
-    .newsub {
-        display: block;
-        font-size: .813rem;
-        margin-bottom: .5rem;
-    }
-    
-    .newps {
-        display: inline-flex;
-        align-items: center;
-        column-gap: .5rem;
-    }
-    
-    .newpri {
-        font-weight: 500;
-        color: var(--naranja);
-    }
-    
-    .newdis {
-        color: #ffffff73;
-        font-size: .75rem;
-        text-decoration: line-through;
-        font-weight: 500;
-    }
-    
-    .newbu {
-        display: inline-flex;
-        padding: .5rem;
-        border-radius: .25rem .25rem .75rem .25rem;
-        position: absolute;
-        bottom: 0;
-        right: -3rem;
-    }
-    
-    .newicon {
-        font-size: 1.25rem;
-    }
-    
-    .newcontent:hover .newimg {
-        transform: translateY(-.5rem);
-    }
-    
-    .newcontent:hover .newbu {
-        right: 0;
-    }
-    
-    .newsld {
-        text-align: center;
-        margin-bottom: 1.5rem;
-    }
-    
-    .newslf {
-        background: var( --naranja);
-        padding: 1rem;
-        display: flex;
-        justify-content: space-between;
-        border-radius: .75rem;
-    }
-    
-    .newslin {
-        width: 70%;
-        padding: 0 .5rem;
-        background: none;
-        color: #fff;
-    }
-    
-    .button2 {
-        display: inline-block;
-        background: #d93b00;
-        color: #fff;
-        padding: 1rem 1.75rem;
-        border-radius: 0.5rem;
-        font-weight: 500;
-        transition: .3s;
-    }
-    
-    .newslin::placeholder {
-        color: #fff;
-    }
-    
-    .footer {
-        position: relative;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        overflow: hidden;
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-    
-    .ftcontainer {
-        margin-top: 20px;
-        row-gap: 2rem;
-    }
-    
-    .footerL {
-        display: flex;
-        align-items: center;
-        column-gap: .5rem;
-        margin-bottom: 1rem;
-        font-weight: 500;
-        color: #fff;
-    }
-    
-    .footerL-img {
-        width: 20px;
-    }
-    
-    .footerdescription {
-        margin-bottom: 2.5rem;
-    }
-    
-    .footersocial {
-        display: flex;
-        column-gap: .75rem;
-    }
-    
-    .footersocial-link {
-        display: inline-flex;
-        background: #0c0b0b;
-        padding: .25rem;
-        border-radius: .25rem;
-        color: #fff;
-        font-size: 1rem;
-    }
-    
-    .footersocial-link:hover {
-        background-color: var( --naranja);
-    }
-    
-    .icoFooter {
-        color: var(--naranja);
-        position: relative;
-        margin-bottom: -3.5px;
-    }
-    
-    .borderFooter {
-        padding: 7px;
-        border: inset 1px;
-        border-color: var(--naranja);
-        width: 120px;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-    }
-    
-    .borderFooterEtiqueta {
-        padding: 7px;
-        border: inset 1px;
-        border-color: var(--naranja);
-        width: 90px;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-    }
-    
-    .ftti {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
-    
-    .ftli {
-        display: grid;
-        row-gap: .35rem;
-    }
-    
-    .ftrli {
-        font-size: .813rem;
-        color: #fff;
-        transition: .3s;
-    }
-    
-    .ftrli:hover {
-        color: #d93b00;
-    }
-    
-    .fondoPro {
-        background-image: linear-gradient(90deg, rgb(66, 65, 65, 0.3), rgb(0, 0, 0, 0.8) 50%), url(../img/programacion.jpg);
-        background-attachment: fixed;
-    }
-    
-    .fondoPro2 {
-        background-image: linear-gradient(90deg, rgb(66, 65, 65, 0.9), rgb(0, 0, 0, 0.8) 50%), url(../img/programacion.jpg);
-        background-attachment: fixed;
-    }
-    
-    .footercopy {
-        display: block;
-        text-align: center;
-        font-size: .75rem;
-        opacity: 0.2;
-    }
-    
-    .scrollup {
-        position: fixed;
-        background: #0c0b0b;
-        right: 1rem;
-        bottom: -20%;
-        display: inline-flex;
-        padding: .3rem;
-        border-radius: .25rem;
-        z-index: 10;
-        opacity: .8;
-        transition: .4s;
-    }
-    
-    .scrollupicon {
-        font-size: 1.25rem;
-        color: #fff;
-    }
-    
-    .scrollup:hover {
-        background: var( --naranja);
-        opacity: 1;
-    }
-    
-    .show-scroll {
-        bottom: 3rem;
-    }
-    
-     ::-webkit-scrollbar {
-        background-color: var(--fondoScroll);
-        width: 0.6rem;
-    }
-    
-     ::-webkit-scrollbar-thumb {
-        background: var(--scroll);
-        filter: invert(100%);
-        border-radius: .5rem;
-    }
     /*BREAKPOINTS*/
     
     @media screen and (max-width: 320px) {
@@ -988,6 +629,45 @@
             height: 420px;
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
     /*-------------------------------------------------------------------------------------------------------*/
     /*PORTAFOLIO */
     
@@ -1071,81 +751,7 @@
     .Cartelera {
         margin-top: 50px;
     }
-    /*IMAGENES DE FOINDO DEL PORTAFOLIO*/
-    
-    .portaChacabuco {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/grafchac.PNG);
-    }
-    
-    .portaSTONE {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/logo\ stone\ \(1\).png);
-    }
-    
-    .portaServer {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaServer.webp);
-    }
-    
-    .portaABM {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaABM.webp);
-    }
-    
-    .portaGCMSEGUROS {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/GCMportafolio.webp);
-    }
-    
-    .portaLantern {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaLantern.webp);
-    }
-    
-    .portaDiscord {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaDiscord.webp);
-    }
-    
-    .portaDashboard {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaDashboard.webp);
-    }
-    
-    .portaCrispy {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaCrispy.webp);
-    }
-    
-    .portaDental {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaDental.PNG);
-    }
-    
-    .portaPrufex {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaPrufex.PNG);
-    }
-    
-    .portaTABY {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaTABY.PNG);
-    }
-    
-    .portaBDT {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaBDT.PNG);
-    }
-    
-    .portaBBB {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaBBB.PNG);
-    }
-    
-    .portaPHP {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaPHP.webp);
-    }
-    
-    .portaLAURA {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaLAURA.PNG);
-    }
-    
-    .portaTRAVEL {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaTravel.webp);
-    }
-    
-    .portaMuseum {
-        background-image: linear-gradient(90deg, rgba(161, 161, 161, 0.4), rgb(0, 0, 0, 0.4) 50%), url(../img/portaMuseum.PNG);
-    }
-    /* FIN DE IMAGENES DE FOINDO DEL PORTAFOLIO*/
-    
+  
     .botonPORTA {
         background-color: ;
         background-size: cover;
@@ -1176,76 +782,11 @@
         background-attachment: fixed;
     }
     /*FIN DE PORTAFOLIO*/
+
+
+
     /*---------------------------------------------------------------------------------------------------*/
-    /*MODAL*/
-    
-    .desenfoque {
-        -webkit-filter: blur(0);
-        filter: blur(0);
-    }
-    
-    .modal--active .desenfoque {
-        -webkit-filter: blur(5px);
-        filter: blur(5px);
-    }
-    
-    .modal-CardAlerta {
-        position: fixed;
-        top: 100vh;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        -webkit-filter: blur(15px);
-        filter: blur(15px);
-        overflow: auto;
-        opacity: 0;
-        z-index: -500;
-        transition: 0.5s;
-    }
-    
-    .modal-CardAlerta.modal--active {
-        z-index: 500;
-        top: 0px;
-        -webkit-filter: blur(0);
-        filter: blur(0);
-        opacity: 1;
-    }
-    
-    .modal {
-        position: relative;
-        background: rgba(23, 23, 23);
-        padding: 80px 20px 20px;
-        overflow: hidden;
-        height: 300px;
-        width: 600px;
-        border-radius: 25px;
-        box-shadow: 0px 0px 10px rgba(34, 34, 34, 0.774);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .modal-title {
-        position: absolute;
-        top: 15px;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        font-size: 3rem;
-    }
-    
-    .modal-button {
-        background-color: var(--naranja);
-        color: #fff;
-        border-radius: 50px;
-        padding: 5px 10px;
-    }
-    
-    .modal-button:hover {
-        transform: scale(1.1);
-        transition: 0.5s;
-        color: black;
-    }
+  
     /*---------------------------------------------------------------------------------------------------*/
     /* MEDIAS CON MAX PORTAFOLIO */
     
