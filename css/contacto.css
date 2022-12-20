@@ -24,6 +24,7 @@ body {
     justify-content: center;
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
     z-index: 5;
+    transition: 1s;
 }
 
 .contacIzquierda {
@@ -51,11 +52,18 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    padding: 25px;
+    padding: 15px;
     backdrop-filter: blur(4px);
     border-radius: 10px;
     background-color: rgba(50, 50, 50, 0.438);
     width: 70% !important;
+}
+
+.logoContactos {
+    margin-top: -8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .contactanos {
@@ -76,7 +84,7 @@ body {
     height: 50px;
     border-radius: 50px;
     width: auto !important;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
     background-color: rgba(50, 50, 50, 0.438);
 }
 
@@ -86,7 +94,7 @@ body {
     color: #fff;
     transition: 0.5s;
     text-decoration: none;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 .redesSocialesContac a:hover {
@@ -198,4 +206,25 @@ body {
     top: 50%;
     left: 5%;
     transform: translate(0%, -50%);
+}
+
+@media (max-width: 1000px) {
+    .contactos {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding: 15px;
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        background-color: rgba(50, 50, 50, 0.438);
+        width: 80% !important;
+    }
+}
+
+@media (max-width: 850px) {
+    .contacIzquierda {}
+    .contacDerecha {
+        display: grid;
+        clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+    }
 }
