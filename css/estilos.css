@@ -424,7 +424,7 @@ hr {
 .cardsNosotros {
     backdrop-filter: blur(5px);
     background-color: rgba(2, 2, 2, 0.075);
-    border-radius: 20px;
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -505,7 +505,29 @@ nav ul li a:hover {
 
 .cercaPoco:hover {
     transform: scale(1.03);
+    background: blue;
 }
+
+
+/*------------------------------------------NUESTROS SERVICIOS----------------------------------------------------------------------*/
+
+.ServicosCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    background: rgb(19, 110, 146);
+    cursor: pointer;
+    width: 100%;
+}
+
+.ServicosCard :hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/*----------------------------------------------------@MEDIAS----------------------------------------------------------------------*/
 
 @media (max-width: 850px) {
     .TextInicio {
