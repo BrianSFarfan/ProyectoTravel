@@ -511,6 +511,12 @@ nav ul li a:hover {
 
 /*------------------------------------------NUESTROS SERVICIOS----------------------------------------------------------------------*/
 
+.servicios {
+    background-image: url(../img/EstrellaFondo.png);
+    background-size: cover;
+    background-position: center;
+}
+
 .ServicosCard {
     display: flex;
     align-items: center;
@@ -522,7 +528,8 @@ nav ul li a:hover {
     width: 100%;
     transition: 0.6s;
     padding: 0;
-    color: #fff;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 10px black;
     margin: 20px;
 }
 
@@ -607,6 +614,12 @@ nav ul li a:hover {
             border-right: none;
             border-bottom: none;
             clip-path: polygon(0 100%, 100% 100%, 100% 0, 55% 0, 50% 5%, 45% 0, 0 0);
+        }
+        .ServicosCard {
+            margin: auto;
+            margin-bottom: 20px;
+            width: 90%;
+            display: flex;
         }
     }
     @media (max-width: 440px) {
