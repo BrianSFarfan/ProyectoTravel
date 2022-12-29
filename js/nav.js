@@ -9,9 +9,7 @@ window.onscroll = function() {
     } else {
         document.getElementById("botoNav").className = "checkbtn";
     }
-};
-window.onscroll = function() {
-    var y = window.scrollY;
+
     if (y > 200) {
         document.getElementById("NavCompleto").className = "navFixedDark ";
         document.getElementById("botonArriba").className = "btnHaciaArriba btnA-activado";
