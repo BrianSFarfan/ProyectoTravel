@@ -316,10 +316,21 @@
 
 <link rel="stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css ">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
+<script src="JS/nav.js "></script>
 <script>
     AOS.init();
 </script>
-<script src="JS/navbar.js "></script>
+
+<script>
+    var nav = document.getElementById('NavCompleto');
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 100) {
+            nav.classList.add('navFixedDark');
+        } else {
+            nav.classList.remove('navFixedDark');
+        }
+    });
+</script>
 <script src="js/marquee.js "></script>
 <!--FIN DE JS-->
 
