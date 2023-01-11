@@ -531,8 +531,9 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat;
     height: 350px;
-    background-size: 60vw;
+    background-size: 50vw;
     background-position: center;
     cursor: pointer;
     width: 100%;
@@ -541,6 +542,10 @@ nav ul li a:hover {
     color: rgb(255, 255, 255);
     text-shadow: 5px 5px 10px black;
     margin: 20px;
+}
+
+.ServicosCard:hover {
+    background-size: 60vw;
 }
 
 .capaOscuraServi {
@@ -555,10 +560,6 @@ nav ul li a:hover {
 .capaOscuraServi:hover {
     backdrop-filter: blur(3px);
     background-color: rgba(0, 0, 0, 0.473);
-}
-
-.ServicosCard:hover {
-    background-size: 70vw;
 }
 
 .tituloSubrayado {
@@ -724,6 +725,18 @@ border: 2px solid #eee;
     .logoFooter {
         width: 160%;
     }
+    .ServicosCard {
+        background-size: 65vw;
+    }
+    .ServicosCard:hover {
+        background-size: 75vw;
+    }
+}
+
+@media (max-width: 991px) {
+    .logoFooter {
+        width: 160%;
+    }
 }
 
 @media (max-width: 850px) {
@@ -744,54 +757,51 @@ border: 2px solid #eee;
     .banner-image1 {
         padding: 0px;
     }
-    @media (max-width: 767px) {
-        .footerB {
-            text-align: center;
-        }
-        .redes div {
-            margin: auto auto;
-        }
-        .hrFooter {
-            margin: auto;
-            width: 160px;
-            margin-bottom: 20px;
-        }
-        .footerF {
-            border: inset 7px;
-            border-image: var(--dorado);
-            border-left: none;
-            border-right: none;
-            border-bottom: none;
-            clip-path: polygon(0 100%, 100% 100%, 100% 0, 55% 0, 50% 5%, 45% 0, 0 0);
-        }
-        .ServicosCard {
-            margin: auto;
-            margin-bottom: 20px;
-            width: 90%;
-            display: flex;
-        }
-        .logoFooter {
-            width: 100%;
-            margin-bottom: 20px;
-            margin-left: -6px;
-        }
+}
+
+@media (max-width: 767px) {
+    .footerB {
+        text-align: center;
     }
-    @media (max-width: 440px) {
-        .titulos {
-            font-size: 40px;
-        }
-        .cuadroText p {
-            font-size: 20px;
-        }
-        .footerF {
-            clip-path: polygon(0 100%, 100% 100%, 100% 0, 60% 0, 50% 4%, 40% 0, 0 0);
-        }
-        .banner-image1 {
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 65% 90%, 50% 82%, 35% 90%, 0 90%);
-        }
-        .flechita {
-            font-size: 2.2rem;
-        }
+    .redes div {
+        margin: auto auto;
+    }
+    .hrFooter {
+        margin: auto;
+        width: 160px;
+        margin-bottom: 20px;
+    }
+    .footerF {
+        border: inset 7px;
+        border-image: var(--dorado);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 55% 0, 50% 5%, 45% 0, 0 0);
+    }
+    .ServicosCard {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+        display: flex;
+        background-size: 100vw;
+    }
+    .ServicosCard:hover {
+        background-size: 120vw;
+    }
+    .logoFooter {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: -6px;
+    }
+}
+
+@media (max-width: 600px) {
+    .ServicosCard {
+        background-size: 120vw;
+    }
+    .ServicosCard:hover {
+        background-size: 140vw;
     }
 }
 
@@ -812,6 +822,33 @@ border: 2px solid #eee;
         color: rgb(255, 255, 255);
         transform: scale(1.2);
         opacity: 1;
+    }
+}
+
+@media (max-width: 440px) {
+    .titulos {
+        font-size: 40px;
+    }
+    .cuadroText p {
+        font-size: 20px;
+    }
+    .footerF {
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 60% 0, 50% 4%, 40% 0, 0 0);
+    }
+    .banner-image1 {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 65% 90%, 50% 82%, 35% 90%, 0 90%);
+    }
+    .flechita {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 410px) {
+    .ServicosCard {
+        background-size: 180vw;
+    }
+    .ServicosCard:hover {
+        background-size: 200vw;
     }
 }
 
