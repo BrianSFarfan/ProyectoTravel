@@ -27,9 +27,14 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50px;
 }
 
+.TituloLogo {
+    color: #ffffff;
+    text-shadow: 0px 0px 5px black;
+    margin-top: 20px;
+}
+
 .btnInicio {
     transform: scale(1.15);
-    margin-top: 30px;
     background-color: rgba(0, 0, 0, 0.411);
     color: white;
     width: 200px;
@@ -37,7 +42,7 @@ body::-webkit-scrollbar-thumb {
     border-image: var(--dorado);
     clip-path: polygon(98% 0, 100% 50%, 98% 100%, 2% 100%, 0% 50%, 2% 0);
     transition: 0.3s;
-    margin: 30px 25px 0 25px;
+    margin: 20px 25px 0 25px;
     border-bottom-width: 2px;
     border-top-width: 2px;
     opacity: 0.7;
@@ -90,7 +95,7 @@ body::-webkit-scrollbar-thumb {
 
 .nosotros {
     background-image: url(../img/EstrellaFondo.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -703,13 +708,35 @@ border: 2px solid #eee;
 }
 */
 
+
+/*-----------------------------------CORIZACION--------------------------------------------------------*/
+
+.izqCotizacion {
+    margin: auto;
+}
+
+.izqCotizacion h2 {
+    color: white;
+    margin-left: 20px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
 .cotizaInicio {
     background-image: url(../img/fondo5.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
 }
+
+.cotizaCard {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*----------------------------------------------------@MEDIAS----------------------------------------------------------------------*/
 
 @media (max-width: 600px) {
     html {
@@ -725,9 +752,6 @@ border: 2px solid #eee;
         width: 5rem;
     }
 }
-
-
-/*----------------------------------------------------@MEDIAS----------------------------------------------------------------------*/
 
 @media (max-width: 991px) {
     .logoFooter {
@@ -748,6 +772,9 @@ border: 2px solid #eee;
 }
 
 @media (max-width: 850px) {
+    .nosotros {
+        background-size: cover;
+    }
     .TextInicio {
         font-size: 4rem;
     }
